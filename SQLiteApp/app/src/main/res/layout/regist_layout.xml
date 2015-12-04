@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="60dp">
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름"/>
+
+    <EditText
+        android:id="@+id/txt_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="성별"/>
+
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="폰번호"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:onClick="btnClick"/>
+
+        <Button
+            android:id="@+id/bt_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회"
+            android:onClick="btnClick"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

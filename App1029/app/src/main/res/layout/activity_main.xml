@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="재생 파일명"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="녹음"
+            android:onClick="btnClick"/>
+        <Button
+            android:id="@+id/bt_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="녹음 중지"
+            android:onClick="btnClick"/>
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="재생"
+            android:onClick="btnClick"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit_filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="녹음할 파일명 입력"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFDD00"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

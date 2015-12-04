@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="그리기" />
+
+    < com.example.sufaceview.MySurfaceView2
+        android:id="@+id/mySurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFDDFF00"/>
+
+</LinearLayout>

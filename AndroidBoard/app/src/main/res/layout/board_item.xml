@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"> <!--내용물을 테두리에서 살짝 띄는거-->
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="3"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/BoardItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘 끝나고 회식하자!!"/>
+    <TextView
+        android:id="@+id/txt_writer"
+        style="@style/BoardItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성자: 부반장"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_regdate"
+        style="@style/BoardItemRegdate"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="2015-10-26"/>
+</LinearLayout>
